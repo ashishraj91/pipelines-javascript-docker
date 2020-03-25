@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: ashishrajpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ashishrajpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: ashishrajpipelinesjavascriptdocker 
+          image: rldevopsregistry.azurecr.io/ashishrajpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
